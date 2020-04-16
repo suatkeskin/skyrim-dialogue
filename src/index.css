@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: #252525;
+}
+
+a {
+    text-decoration: none;
+    color: #252525;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.btn {
+    text-transform: uppercase;
+    margin: 35px auto;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, .29);
+    cursor: pointer;
+    background: #fff;
+    font-size: 16px;
+    width: 250px;
+    position: relative;
+}
+
+.btn:hover {
+    border-color: rgba(0, 0, 0, .5);
+    text-decoration: none;
+}
+
+.btn:focus {
+    outline: 0;
+    font-weight: 700;
+    border-width: 2px;
+}
+
+.center {
+    text-align: center;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-decoration: none;
+}
+
+.nav li:first-child {
+    padding-left: 0;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.dialogue {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    margin: 0 auto;
+    border: 1px solid #dad7d7;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.dialogue-info {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hacky but less typing in the video */
+.dialogue-info > div > span:first-child {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.dialogue-info > div > span:nth-child(2) {
+    color: #969696;
+    font-size: 16px;
+}
+
+.dialogue-info > div > div {
+    color: #969696;
+    font-size: 15px;
+}
+
+.dialogue-info > div > p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.dialogue-icons {
+    display: flex;
+    align-items: center;
+}
+
+.dialogue-icons > span {
+    color: #969696;
+    margin: 0 15px 0 5px;
+    font-size: 18px !important;
+}
+
+.dialogue-icon {
+    font-size: 27px;
+    color: #697784;
+}
+
+.dialogue-icon:hover {
+    color: #00b5d6;
+    cursor: pointer;
+}
+
+.replying-to {
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    color: #969696;
+    cursor: pointer;
+}
+
+.dialogue-button {
+    background: transparent;
+    border: none;
+}
+
+.new-dialogue {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.textarea {
+    border-radius: 4px;
+    border: 1px solid #dad7d7;
+    padding: 10px;
+    font-size: 15px;
+    height: 100px;
+}
+
+.list-dialogues-search {
+    display: flex;
+    margin: 0 auto;
+    top: 0;
+    border-bottom: 1px solid #d5d8df;
+}
+
+.dialogue-length {
+    text-align: right;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #C3392A;
+}
+
+.search-dialogue {
+    width: 100%;
+    padding: 20px 20px 20px 60px;
+    background-image: url('./icons/search.svg');
+    background-repeat: no-repeat;
+    background-position: 20px center;
+    background-size: 1.2em;
+    font-size: 1.2em;
+    border: 0;
+    outline: none;
+}
+
+.showing-dialogues {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.showing-dialogues button {
+    color: blue;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: inherit;
+}
